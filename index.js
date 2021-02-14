@@ -8,9 +8,7 @@ import program from "./utils/commander.js";
 
 program.parse(process.argv);
 const opt = program.opts();
-console.log(opt);
 
-// TODO: рефакторить
 function invokeAction() {
   if (opt.list) {
     listContacts();
